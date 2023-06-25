@@ -1,6 +1,6 @@
 # DoorDine - Food Ordering App
 
-DoorDine is a food ordering application built with React, React Router, Contexts, and Custom Hooks. It provides a user-friendly interface for customers to browse and order food from various restaurants. The app also offers sorting features by price and review score, allows users to add new restaurants to the database, and enables them to place orders seamlessly.
+DoorDine is a mock food ordering application built with React, React Router, Contexts, and Custom Hooks. It provides a user-friendly interface for customers to browse and order food from various restaurants. The app also offers sorting features by price and review score, allows users to add new restaurants to the database, and enables them to place orders seamlessly.
 
 ## Features
 
