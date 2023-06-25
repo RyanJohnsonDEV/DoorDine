@@ -1,0 +1,26 @@
+.meal-item-container {
+  position: relative;
+}
+
+.meal-price {
+  color: #609966;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 24px;
+}
+
+.meal-desc {
+  font-style: italic;
+  width: 75%;
+  line-height: 1.5rem;
+}
+
+.meal-name {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .meal-desc {
+    width: 50%;
+  }
+}

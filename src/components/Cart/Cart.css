@@ -1,0 +1,128 @@
+.cart-card {
+  padding: 2%;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: 0;
+}
+
+.close-button {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cart-items {
+  list-style: none;
+  margin: 0;
+  max-height: 30vh;
+  overflow-y: scroll;
+  border: 1px solid rgb(190, 190, 190);
+  padding-left: 1rem;
+}
+
+.cart-item {
+  padding: 0.5rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cart-item-title {
+  max-width: 70%;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.item-amount {
+  font-weight: bold;
+  font-size: 20px;
+  color: #015a10;
+  margin-right: 2rem;
+}
+
+.item-price {
+  font-style: italic;
+}
+
+.hr {
+  position: relative;
+  transform: translateY(14px);
+}
+
+.actions {
+  text-align: right;
+}
+
+.item-actions {
+  position: absolute;
+  display: flex;
+  right: 1rem;
+  transform: translateY(-1.1rem);
+}
+
+.add-item,
+.subtract-item {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #0e7714;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0.8rem 0.5rem;
+  transition: 0.1s ease-in;
+  user-select: none;
+  font-weight: bold;
+}
+
+.cart-item button:hover,
+.cart-item button:active {
+  background-color: #015c05;
+  border-color: #015a10;
+  color: white;
+}
+
+.item-buttons {
+  transform: translateY(-2rem);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #0e7714;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  transition: 0.1s ease-in;
+  user-select: none;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #015c05;
+  border-color: #015a10;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #068a0d;
+}
+
+.actions .button {
+  background-color: #068a0d;
+  color: white;
+}

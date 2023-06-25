@@ -1,0 +1,32 @@
+/* 
+from lightest to darkest
+1 #EDF1D6
+2 #9DC08B
+3 #609966
+4 #40513B
+5 #202b1c 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #9dc08b;
+  --header-color: #609966;
+  --dark-color: #081a00;
+  --mid-color: #385031;
+  --button-color: #285430;
+  --light-color: #e1fccb91;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}

@@ -1,0 +1,33 @@
+.form {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form input[type='number']::-webkit-inner-spin-button,
+.form input[type='number']::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.form .button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #609966;
+  border: 1px solid #000000;
+  color: white;
+  padding: 0.5rem 2.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.1s ease-in;
+  user-select: none;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #40513b;
+}
+
+.disabled {
+  background-color: dimgrey !important;
+}

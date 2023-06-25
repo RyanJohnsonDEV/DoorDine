@@ -1,0 +1,119 @@
+.home-header {
+  height: 820px;
+  background-color: var(--mid-color);
+
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 10px #585858;
+}
+
+.search-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.header-container {
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.header-title {
+  color: white;
+}
+
+.address-input {
+  width: clamp(375px, 30vw, 35vw);
+  font-size: 25px;
+  padding: 1.25rem;
+  border-radius: 100px;
+  align-items: center;
+  border: none;
+}
+
+.home-error-text {
+  color: red;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.address-button {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.4rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100%;
+  font-size: 30px;
+  background-color: var(--main-bg-color);
+  transition: 0.1s ease-in;
+  font-weight: 900;
+  color: white;
+  border: none;
+}
+
+.address-button:hover {
+  background-color: var(--mid-color);
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputAndButton,
+.addressAndButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.addressAndButton {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+
+.change-address {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  color: var(--main-bg-color);
+  transition: 0.1s ease-in;
+}
+
+.change-address:hover {
+  cursor: pointer;
+  color: var(--dark-color);
+}
+
+.submit-button {
+  position: relative;
+  height: 3.5rem;
+  margin-left: 3rem;
+  min-width: 3.5rem;
+  border-radius: 100%;
+  font-size: 30px;
+  background-color: var(--main-bg-color);
+  transition: 0.1s ease-in;
+  font-weight: 900;
+  color: white;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: var(--mid-color);
+  cursor: pointer;
+}

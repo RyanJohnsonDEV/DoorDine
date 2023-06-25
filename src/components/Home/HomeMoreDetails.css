@@ -1,0 +1,50 @@
+.home-more-info {
+  padding-top: 5rem;
+}
+
+.home-info-block,
+.home-info-block2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.home-info-block2 {
+  background-color: var(--light-color);
+  padding: 5rem;
+}
+
+.home-info-block img,
+.home-info-block2 img {
+  max-width: 700px;
+}
+
+.home-info-block p,
+.home-info-block2 p {
+  margin-top: 2rem;
+  max-width: 400px;
+}
+
+.home-info-block h1,
+.home-info-block2 h1 {
+  line-height: 1rem;
+}
+
+.home-more-info button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.1s ease-in;
+}
+
+.home-more-info button:hover,
+.home-more-info button:active {
+  background-color: #202b1c;
+}

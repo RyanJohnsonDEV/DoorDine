@@ -1,0 +1,41 @@
+.addressGroup,
+.cardGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 50%));
+  justify-content: center;
+}
+
+.formHR {
+  margin: 2rem 0 1rem 0;
+}
+
+.orderForm {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 1rem;
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+
+.nameInput {
+  width: 100%;
+  text-align: center;
+}
+
+.cvvNumber {
+  width: 20%;
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: rgba(255, 179, 151, 0.4);
+}
+
+.error-text {
+  font-size: 12px;
+  color: red;
+}
+
+.success {
+  color: lime;
+  font-weight: bold;
+}

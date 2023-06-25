@@ -1,0 +1,15 @@
+.info-block-small {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.block-small {
+  margin: 0 4rem;
+}
+
+html {
+  background-color: white;
+}

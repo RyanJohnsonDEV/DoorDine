@@ -1,0 +1,83 @@
+ {
+    id: 'm1',
+    name: 'Grilled Shrimp',
+    description: 'Six shrimp in a chipotle marinade served with chipotle aioli',
+    price: 8.5,
+  },
+  {
+    id: 'm2',
+    name: 'Chicken Wings',
+    description:
+      'Choice of hot, mild, BBQ, or teriyaki sauce served with celery and your choice of Bleu Cheese or Ranch dressing',
+    price: 8.99,
+  },
+  {
+    id: 'm3',
+    name: 'Hot Pretzel Sticks',
+    description:
+      'Six fresh made pretzel sticks served with house made dijon cheese dip',
+    price: 6,
+  },
+  {
+    id: 'm4',
+    name: 'Smoked Chicken Pizza',
+    description:
+      'Red sauce pizza topped with smoked chicken, roasted poblano peppers, redonions, and mozzarella cheese finished with a garlic puree',
+    price: 15.99,
+  },
+  {
+    id: 'm5',
+    name: 'Italian Pizza',
+    description:
+      'Red sauce pizza topped with sausage, pepperoni, onions, green peppers, and mozzarella cheese',
+    price: 16.99,
+  },
+  {
+    id: 'm6',
+    name: 'House Salad',
+    description:
+      'Mixed greens, red onions, sunflower seeds, tomatoes, mozzarella cheese, house made balsamic vinaigrette',
+    price: 8,
+  },
+  {
+    id: 'm7',
+    name: 'Caesar Salad',
+    description:
+      'Romaine lettuce, aged parmigiano-reggiano, house made Caesar dressing, and croutons',
+    price: 9,
+  },
+  {
+    id: 'm8',
+    name: 'Cheesesteak Sandwich',
+    description:
+      'On a fresh baked baquette, ribeye steak, onions, green peppers, and shredded mozzarella',
+    price: 12.99,
+  },
+  {
+    id: 'm9',
+    name: 'Meatball Sandwich',
+    description:
+      'On a fresh baked baguette, beef and pork meatballs, marinara, and shredded mozzarella',
+    price: 12.99,
+  },
+  {
+    id: 'm10',
+    name: 'Angus Hamburger',
+    description:
+      'On a fresh baked bun, half pound of angus beef, with lettuce, tomato, and your choice of cheddar or swiss cheese',
+    price: 17.99,
+  },
+  {
+    id: 'm11',
+    name: 'Western Burger',
+    description:
+      'On a fresh baked bun, half pound of angus beef topped with bacon, BBQ sauce, and cheddar cheese ',
+    price: 18.99,
+  },
+  {
+    id: 'm12',
+    name: 'Linguine and Meatballs',
+    description:
+      'Linguine topped with marinara and our house-made beef and pork meatballs',
+    price: 15.99,
+  },

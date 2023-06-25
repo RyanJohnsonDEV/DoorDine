@@ -1,0 +1,5 @@
+.ordering {
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  padding-bottom: 10rem;
+}

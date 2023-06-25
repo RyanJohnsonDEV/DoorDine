@@ -1,0 +1,22 @@
+.restaurant-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
+  padding: 3rem 10%;
+  gap: 2rem;
+  min-height: 70vh;
+}
+
+.restaurant-listing {
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurant-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

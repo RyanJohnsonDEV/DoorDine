@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #191919;
+  padding: 3rem;
+  color: lightgray;
+}
+
+.footer h2 {
+  font-size: 28px;
+}
+
+.footer h4 {
+  color: gray;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+  transition: 0.1s ease-in;
+}
+
+.footer a:hover {
+  color: var(--header-color);
+}

@@ -1,0 +1,31 @@
+.restaurant-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  height: 370px;
+  line-height: 1rem;
+  width: 500px;
+}
+
+.restaurant-container h2 {
+  margin-top: 2rem;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.restaurant-description {
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 535px) {
+  .restaurant-container {
+    width: 90vw;
+  }
+}

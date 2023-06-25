@@ -1,0 +1,81 @@
+.submit-restaurant-button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.1s ease-in;
+  margin-top: 1.5rem;
+}
+
+.submit-restaurant-button-container {
+  text-align: right;
+}
+
+.submit-restaurant-button:hover,
+.submit-restaurant-button:active {
+  background-color: #202b1c;
+}
+
+.add-restaurant-form {
+  position: relative;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.menu-input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-input-group input {
+  flex: 1 0 auto;
+}
+
+.menu-input-group button {
+  flex: 1 0 auto;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  border-radius: 100px;
+  font-weight: bold;
+  transition: background-color 0.1s ease-in;
+  font-size: 24px;
+}
+
+.menu-input-group button:hover,
+.menu-input-group button:active {
+  background-color: #202b1c;
+}
+
+.form-menu-item {
+  background-color: var(--header-color);
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+}
+
+.menu-items-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.fa-circle-xmark {
+  margin-left: 0.5rem;
+}
+
+.delete-menu-item:hover {
+  cursor: pointer;
+}
