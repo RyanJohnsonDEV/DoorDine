@@ -33,6 +33,7 @@ Once you have DoorDine open in your browser, you can:
 - React Router: A routing library for React applications.
 - Contexts: React's Context API for state management.
 - Custom Hooks: Reusable hooks to enhance functionality and code organization.
+- Firebase: Database for storing user-submitted information
 
 ## Contributing
 
