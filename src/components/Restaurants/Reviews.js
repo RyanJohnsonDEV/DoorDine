@@ -10,8 +10,6 @@ function Reviews(props) {
   const [reviewModalIsOpen, setReviewModalIsOpen] = useState(false);
   const params = useParams();
 
-  console.log(reviews);
-
   function openReviews() {
     setReviewModalIsOpen(true);
   }
@@ -27,7 +25,6 @@ function Reviews(props) {
   }, [props.data.reviews]);
 
   async function submitReview(review) {
-    console.log(JSON.stringify(review));
     await fetch(
       `https://food-delivery-app-68dae-default-rtdb.firebaseio.com/Restaurants/${params.id}/reviews.json`,
       {
@@ -56,11 +53,13 @@ function Reviews(props) {
         </Modal>
       )}
       <div className="reviews-container">
-        <h1>Ratings & Reviews ({reviews ? reviews.length : '0'})</h1>
-        <div className="review-actions">
-          <button className="review-button" onClick={openReviews}>
-            Submit Review
-          </button>
+        <div className="reviews-heading-container">
+          <h1>Ratings & Reviews ({reviews ? reviews.length : '0'})</h1>
+          <div className="review-actions">
+            <button className="review-button" onClick={openReviews}>
+              Submit Review
+            </button>
+          </div>
         </div>
 
         <div className="reviews">
@@ -75,9 +74,9 @@ function Reviews(props) {
               No Reviews
             </h3>
           ) : (
-            reviews.map((review) => {
+            reviews.map((review, index) => {
               return (
-                <>
+                <div key={index}>
                   <div>
                     <h2>"{review.title}"</h2>
                     <p style={{ color: 'gray' }}>
@@ -85,7 +84,7 @@ function Reviews(props) {
                     </p>
                   </div>
                   <p>"{review.body}"</p>
-                </>
+                </div>
               );
             })
           )}

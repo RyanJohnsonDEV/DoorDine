@@ -4,7 +4,9 @@ import { useState, useEffect } from 'react';
 function Restaurant(props) {
   const [priceAverage, setPriceAverage] = useState();
   const reviews = Object.values(props.reviews);
-  const tags = Object.keys(props.tags).reduce((acc, curr) => `${acc}, ` + curr);
+  const tags = Object.keys(props.tags).reduce(
+    (acc, curr) => acc + (curr !== 'undefined' ? `, ${curr}` : '')
+  );
   const [reviewsAverage, setReviewsAverage] = useState();
   let reviewScoreTotal = 0;
   let count = 0;
@@ -29,7 +31,6 @@ function Restaurant(props) {
     });
 
     const average = foodPriceTotal / count;
-    console.log(average);
 
     if (average < 11) {
       setPriceAverage('$');

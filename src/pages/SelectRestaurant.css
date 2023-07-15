@@ -15,6 +15,14 @@
   height: fit-content;
 }
 
+.loading-meals-text {
+  margin-top: 3.5rem;
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .restaurant-list {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

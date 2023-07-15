@@ -7,7 +7,13 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Layout/Footer';
 import RestaurantSorting from '../components/Restaurants/RestaurantSorting';
 
-async function getRestaurants(setRestaurants, priceSorting, reviewSorting) {
+async function getRestaurants(
+  setRestaurants,
+  priceSorting,
+  reviewSorting,
+  setLoading
+) {
+  setLoading(true);
   const response = await fetch(
     'https://food-delivery-app-68dae-default-rtdb.firebaseio.com/Restaurants.json'
   );
@@ -53,13 +59,12 @@ async function getRestaurants(setRestaurants, priceSorting, reviewSorting) {
       });
       reviewAverage = reviewScoreTotal / count;
     }
-    console.log(reviewAverage, restaurant.name, reviewSorting.max);
 
     return (
       reviewAverage >= reviewSorting.min && reviewAverage <= reviewSorting.max
     );
   }
-
+  setLoading(false);
   setRestaurants(data.filter(filterRestaurants).filter(filterReviews));
 }
 
@@ -68,9 +73,10 @@ function SelectRestaurant() {
   const [priceSorting, setPriceSorting] = useState([]);
   const [reviewSorting, setReviewSorting] = useState({ min: 0, max: 5 });
   const [restaurantContent, setRestaurantContent] = useState();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    getRestaurants(setRestaurants, priceSorting, reviewSorting);
+    getRestaurants(setRestaurants, priceSorting, reviewSorting, setLoading);
 
     document.body.style.backgroundColor = 'var(--main-bg-color)';
     document.documentElement.style.backgroundColor = 'var(--main-bg-color)';
@@ -98,6 +104,10 @@ function SelectRestaurant() {
     );
   }, [restaurants]);
 
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }, []);
+
   function updatePriceSorting(prices) {
     setPriceSorting([...prices]);
   }
@@ -106,7 +116,7 @@ function SelectRestaurant() {
   }
 
   function fetchRestaurantsFromProps() {
-    getRestaurants(setRestaurants, priceSorting);
+    getRestaurants(setRestaurants, priceSorting, reviewSorting);
   }
 
   return (
@@ -119,6 +129,7 @@ function SelectRestaurant() {
           reviewSort={updateReviewSorting}
           currentReviews={reviewSorting}
         />
+        {loading && <p className="loading-meals-text">Loading...</p>}
         <div className="restaurant-list">{restaurantContent}</div>
         <Footer />
       </div>

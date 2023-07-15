@@ -9,6 +9,7 @@ function RestaurantSorting(props) {
   const [reviewError, setReviewError] = useState(false);
   const minReviewsRef = useRef();
   const maxReviewsRef = useRef();
+  const sortingRef = useRef();
 
   useEffect(() => {
     window.addEventListener('click', function (e) {
@@ -95,7 +96,7 @@ function RestaurantSorting(props) {
   }
 
   return (
-    <div className="sorting-container">
+    <div className="sorting-container" ref={sortingRef}>
       <h2>Sort: </h2>
       <div className="sorting-buttons">
         <div className="sort-button-container">

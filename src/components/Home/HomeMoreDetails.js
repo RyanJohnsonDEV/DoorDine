@@ -7,20 +7,25 @@ function HomeMoreDetails() {
   return (
     <div className="home-more-info">
       <div className="home-info-block">
-        <div>
-          <h1>It’s all here.</h1>
-          <h1>All in one place.</h1>
+        <div className="home-info-text">
+          <h1>
+            It’s all here.
+            <br />
+            All in one place.
+          </h1>
           <p>
             Discover local, on-demand delivery or Pickup from restaurants,
             nearby grocery and convenience stores, and more.
           </p>
-          <button>Get The App</button>
+          <Link to={'/'}>
+            <button>Get The App</button>
+          </Link>
         </div>
         <img src={eatingGroup1} alt="People eating food" />
       </div>
       <div className="home-info-block2">
         <img src={eatingGroup2} alt="People eating food" />
-        <div>
+        <div className="home-info-text second-info">
           <h1>Every Flavor Welcome</h1>
           <p>
             From your neighborhood sushi spot to the burger and fries you crave,

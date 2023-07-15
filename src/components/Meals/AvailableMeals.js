@@ -6,15 +6,16 @@ import CartContext from '../../Store/CartContext';
 
 let meals = [];
 let cartItems;
-let loading = true;
 
 function AvailableMeals(props) {
   const [mealsList, setMealsList] = useState();
   const [error, setError] = useState();
+  const [loading, setLoading] = useState(false);
   const kitchenName = props.kitchenName;
   cartItems = useContext(CartContext);
 
   async function getMeals() {
+    setLoading(true);
     try {
       const response = await fetch(
         `https://food-delivery-app-68dae-default-rtdb.firebaseio.com/Restaurants/${kitchenName}/meals.json`
@@ -58,12 +59,11 @@ function AvailableMeals(props) {
     } catch (error) {
       setError('No restaurant found.');
     }
-    loading = false;
+    setLoading(false);
   }
 
   useEffect(() => {
     if (kitchenName) {
-      loading = true;
       getMeals();
     }
   }, [kitchenName]);
@@ -71,7 +71,9 @@ function AvailableMeals(props) {
   return (
     <section className="meals">
       <Card>
-        {loading && <p style={{ color: 'black' }}>Loading...</p>}
+        {loading && (
+          <p style={{ color: 'black', textAlign: 'center' }}>Loading...</p>
+        )}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <ul className="available-meals">{mealsList}</ul>
       </Card>

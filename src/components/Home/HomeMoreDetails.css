@@ -8,11 +8,13 @@
   justify-content: center;
   margin-top: 3rem;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .home-info-block2 {
   background-color: var(--light-color);
   padding: 5rem;
+  flex-wrap: wrap-reverse;
 }
 
 .home-info-block img,
@@ -26,9 +28,11 @@
   max-width: 400px;
 }
 
-.home-info-block h1,
-.home-info-block2 h1 {
-  line-height: 1rem;
+.home-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .home-more-info button {
@@ -47,4 +51,17 @@
 .home-more-info button:hover,
 .home-more-info button:active {
   background-color: #202b1c;
+}
+
+@media screen and (max-width: 768px) {
+  .home-info-block img,
+  .home-info-block2 img {
+    max-width: 90vw;
+  }
+  .home-info-text {
+    max-width: 300px;
+  }
+  .home-more-info {
+    padding-top: 0;
+  }
 }

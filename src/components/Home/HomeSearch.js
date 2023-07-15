@@ -9,7 +9,6 @@ function HomeSearch(props) {
   const [error, setError] = useState();
   const navigate = useNavigate();
   const address = useContext(AddressContext);
-  console.log(address.address);
 
   function inputSubmit() {
     if (address.address === '') {
@@ -46,6 +45,9 @@ function HomeSearch(props) {
   function keyDownHandler(event) {
     if (event.key === 'Enter') {
       inputSubmit();
+    }
+    if (event.target.value !== '') {
+      setError('');
     }
   }
 

@@ -5,10 +5,6 @@ import OrderPage from './pages/OrderPage';
 import AddressContext from './Store/AddressContext';
 import { useState, useEffect } from 'react';
 
-// TODO
-// Finish Home Page
-// Add footer
-
 function App() {
   const [address, setAddress] = useState('');
   const [currentRestaurant, setCurrentRestaurant] = useState('');

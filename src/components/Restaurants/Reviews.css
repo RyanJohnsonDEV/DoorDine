@@ -6,6 +6,7 @@
   max-width: 80rem;
   margin: 5rem auto 0;
   position: relative;
+  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
 }
 
 .review-button {
@@ -21,7 +22,7 @@
   transition: background-color 0.1s ease-in;
   position: absolute;
   right: 5rem;
-  top: 2rem;
+  top: 2.3rem;
 }
 
 .review-button:hover,
@@ -43,4 +44,23 @@
   font-weight: bold;
   cursor: pointer;
   user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+  .review-button {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .reviews-heading-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 2rem;
+  }
+  .reviews-container {
+    padding: 1rem 2rem 1rem;
+  }
 }
